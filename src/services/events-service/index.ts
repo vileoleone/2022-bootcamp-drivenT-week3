@@ -1,4 +1,4 @@
-import { notFoundError } from "@/errors";
+import { notFoundError } from "@/repositories/errors";
 import eventRepository from "@/repositories/event-repository";
 import { exclude } from "@/utils/prisma-utils";
 import { Event } from "@prisma/client";

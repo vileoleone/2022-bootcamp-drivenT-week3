@@ -1,4 +1,5 @@
 import app, { init } from "@/app";
+import { prisma } from "@/config";
 import httpStatus from "http-status";
 import supertest from "supertest";
 import { createEvent } from "../factories";

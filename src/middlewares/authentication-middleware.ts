@@ -2,7 +2,8 @@ import { NextFunction, Request, Response } from "express";
 import httpStatus from "http-status";
 import * as jwt from "jsonwebtoken";
 
-import { unauthorizedError } from "@/errors";
+// eslint-disable-next-line boundaries/element-types
+import { unauthorizedError } from "@/repositories/errors";
 import { prisma } from "@/config";
 
 export async function authenticateToken(req: AuthenticatedRequest, res: Response, next: NextFunction) {

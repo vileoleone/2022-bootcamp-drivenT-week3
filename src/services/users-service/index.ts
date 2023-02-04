@@ -1,4 +1,4 @@
-import { cannotEnrollBeforeStartDateError } from "@/errors";
+import { cannotEnrollBeforeStartDateError } from "@/repositories/errors";
 import userRepository from "@/repositories/user-repository";
 import { User } from "@prisma/client";
 import bcrypt from "bcrypt";

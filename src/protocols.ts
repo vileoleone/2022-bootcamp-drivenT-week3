@@ -1,3 +1,5 @@
+import { Hotel } from "@prisma/client";
+
 export type ApplicationError = {
   name: string;
   message: string;
@@ -30,3 +32,5 @@ export type RequestError = {
   name: string,
   message: string,
 };
+
+export type hotelBody = Omit<Hotel, "createdAt" | "updatedAt" | "id">;
